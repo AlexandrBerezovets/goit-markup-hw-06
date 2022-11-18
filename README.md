@@ -1,1 +1,2 @@
-# goit-markup-hw-06
+# homework1
+goit.html.homework1
