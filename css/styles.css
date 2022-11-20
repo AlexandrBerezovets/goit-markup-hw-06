@@ -753,6 +753,7 @@ img {
 .sign-part-button:hover,
 .sign-part-button:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 
 .sign-icon {
@@ -773,7 +774,6 @@ img {
 
 .modal {
     width: 528px;
-    height: 581px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -805,7 +805,7 @@ img {
     cursor: pointer;
 }
 
-.modal-close:hover {
+.modal-close:hover, .modal-close:focus {
     fill: var(--accent-color);
     transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -847,6 +847,7 @@ img {
 }
 
 .modal-text {
+    display: block;
     width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -859,6 +860,7 @@ img {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-text:focus {
@@ -885,6 +887,7 @@ img {
     color: var(--black-color);
     padding-left: 39px;
     outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
@@ -900,6 +903,7 @@ img {
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input::placeholder {
@@ -988,5 +992,6 @@ img {
 .send-modal-button:hover,
 .send-modal-button:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 
